@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="../CSS/contact.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&family=Open+Sans:ital,wght@1,300&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <img class="logo" src="../IMAGES/Sere_clearLogo.png" alt="Image Not Found">
+        <nav class="navbar">
+            <a href="../index.html">Home</a>
+            <a href="about.html">About Us</a>
+            <a class="active" href="contact.html">Contact Us</a>
+        </nav>
+    </header>
+    <div class="home-section">
+        <div class="container" id="container">
+            <div class="form-container sign-up-container">
+                <div class="details">
+                    <h1>Contact Us Via...</h1>
+                <ul>
+                    <li><a href="mailto:sereselfcare@gmail.com"><h4>Email:</h4>sereselfcare@gmail.com</a></li>
+                    <li><a href="https://www.facebook.com/sereselfcare/"><h4>Facebook:</h4> @SERE Selfcare</a></li>
+                    <li><a href="https://instagram.com/sere_selfcare?utm_medium=copy_link"><h4>Instagram:</h4>@sere_selfcare</a></li>
+                    <li><a href="https://api.whatsapp.com/message/Q7CPKIRJP4ETA1"><h4>WhatsApp:</h4> +254112888169</a></li>
+                </ul>
+    
+                <button class="ghost" id="signIn">Social Media</button>
+                </div>
+                
+            </div> 
+            <div class="form-container sign-in-container">
+                <div class="details">
+                   <h1>Social Media</h1>
+                <ul>
+                    <li><a href="https://instagram.com/sere_selfcare?utm_medium=copy_link"><h4>Instagram:</h4>@sere_selfcare</a></li>
+                    <li><a href="https://www.facebook.com/sereselfcare/"><h4>Facebook:</h4>@SERE Selfcare</a></li>
+                    <li><a href="https://vm.tiktok.com/ZSeUagLxv/"><h4>Tiktok:</h4>@sere_selfcare</a></li>
+                    <li><a href="https://pin.it/2t4p32e"><h4>Pintrest:</h4>SERE Selfcare (sereselfcare)</a></li>
+                </ul>
+                
+                <button class="ghost" id="signUp" name="signup">Contact Us</button> 
+                </div>
+            </div>
+            <div class="overlay-container">
+                <div class="overlay">
+                    <div class="overlay-panel overlay-left">
+                        
+                        
+                    </div>
+                    <div class="overlay-panel overlay-right">
+    
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    
+    <script>
+        const signUpButton = document.getElementById('signUp');
+        const signInButton = document.getElementById('signIn');
+        const container = document.getElementById('container');
+
+        signUpButton.addEventListener('click', () => container.classList.add('right-panel-active') );
+        signInButton.addEventListener('click', () => container.classList.remove('right-panel-active') );
+    </script>
+</body>
+</html>
